@@ -5,30 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Credit Card Form</title>
     <link rel="stylesheet" href="credit.css">
-    <link rel="icon" type="image/png" href="favicon.png">
 </head>
 <body>
-    <form class="credit-card-form">
-        <div class="card-container">
-            <div class="card-front">
-                <img class="card-image" src="data:image/svg+xml;base64,..." height="55px">
-                <label>Cardholder Name
-                    <input type="text" placeholder="John Doe" required>
-                </label>
-                <label>Card Number
-                    <input type="text" placeholder="1234 5678 9012 3456" required pattern="\d{16}">
-                </label>
-                <label>Expiry Date
-                    <input type="text" placeholder="MM/YY" required pattern="\d{2}/\d{2}">
-                </label>
-            </div>
-            <div class="card-back">
-                <label>CVV
-                    <input type="text" placeholder="123" required pattern="\d{3}">
-                </label>
-            </div>
+    <div class="card-container">
+        <div class="credit-card">
+            <div class="chip"></div>
+            <form>
+                <label for="card-number">CARD NUMBER</label>
+                <input type="text" id="card-number" placeholder="1234 5678 9010 1020" maxlength="19">
+
+                <div class="row">
+                    <div class="column">
+                        <label for="card-holder">CARD HOLDER</label>
+                        <input type="text" id="card-holder" placeholder="John Doe">
+                    </div>
+                    <div class="column">
+                        <label for="exp-month">EXPIRATION</label>
+                        <div class="expiration">
+                            <input type="text" id="exp-month" placeholder="MM" maxlength="2">
+                            <input type="text" id="exp-year" placeholder="YY" maxlength="2">
+                        </div>
+                    </div>
+                </div>
+
+                <label for="cvv">CVV</label>
+                <input type="password" id="cvv" placeholder="***" maxlength="3">
+
+                <button type="submit" class="submit-btn">Submit</button>
+            </form>
         </div>
-        <button type="submit">Submit</button>
-    </form>
+    </div>
 </body>
 </html>
