@@ -1,0 +1,123 @@
+/* Define custom properties */
+:root {
+    --primary-color: #1B98E0;
+    --secondary-color: #59c3c3;
+    --text-light: #ebebeb;
+    --primary-font: Arial, Helvetica, sans-serif;
+    --secondary-font: "Poppins", sans-serif;
+}
+
+/* Global styles */
+body {
+    font-family: var(--primary-font);
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--primary-color);
+    color: white;
+}
+
+main{
+    border:1.5px,solid;
+    
+}
+
+header img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+.search-form {
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+}
+
+.search-form input {
+    padding: 0.5rem;
+    width: 80%;
+    max-width: 400px;
+}
+
+.search-form button {
+    padding: 0.5rem;
+    background-color: var(--secondary-color);
+    border: none;
+    cursor: pointer;
+}
+
+/* Recipe Section */
+.recipe {
+    display: flex;
+    flex-direction: row; /* This will arrange items in a row: image on left, text on right */
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px; /* Add space between image and text */
+    margin: 2rem auto;
+    max-width: 800px;
+}
+
+/* Adjust the image */
+.recipe img {
+    width: 300px; /* Set a fixed width */
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Recipe text (title, rating, description) */
+.recipe-text {
+    display: flex;
+    flex-direction: column; /* Stack title, rating, and description vertically */
+    align-items: flex-start;
+    gap: 10px; /* Add space between elements */
+    text-align: left;
+}
+
+.rating {
+    display: flex;
+    gap: 5px; /* Space between stars */
+}
+
+.icon-star, .icon-star-empty {
+    font-size: 1.5rem; /* Increase star size */
+}
+
+/* Responsiveness */
+@media (min-width: 600px) {
+    .recipe {
+        gap: 30px; /* Increase gap between image and text for wider screens */
+    }
+}
+
+@media (min-width: 960px) {
+    .recipe {
+        max-width: 960px;
+    }
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--text-dark);
+    color: var(--text-light);
+}
+
+footer p {
+    font-size: 0.6em;
+    text-align: left;
+}
+
+.social img {
+    width: 30px;
+    margin: 5px;
+}
+
+.social {
+    text-align: right;
+}
