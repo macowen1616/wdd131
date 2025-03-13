@@ -4,6 +4,7 @@ export const recipes = [
         title: "Spaghetti Carbonara",
         image: "images/spaghetti-carbonara.jpg",
         rating: 4,
+        tags: ["Italian", "Pasta", "Dinner"], // Added tags
         ingredients: ["200g spaghetti", "100g pancetta", "2 large eggs", "50g pecorino cheese", "50g parmesan", "Freshly ground black pepper", "Salt", "2 cloves garlic", "1 tbsp olive oil"],
         steps: [
             "Boil the spaghetti in salted water until al dente.",
@@ -18,6 +19,7 @@ export const recipes = [
         title: "Classic Pancakes",
         image: "images/classic-pancakes.jpg",
         rating: 5,
+        tags: ["Breakfast", "Dessert", "Easy"], // Added tags
         ingredients: ["1 cup flour", "1 tbsp sugar", "1 tsp baking powder", "1/2 tsp salt", "1 cup milk", "1 egg", "2 tbsp melted butter", "1 tsp vanilla extract"],
         steps: [
             "Mix all dry ingredients together.",
@@ -28,3 +30,4 @@ export const recipes = [
         ]
     }
 ];
+
