@@ -58,6 +58,23 @@ img {
     margin-right: 10px; /* Adds spacing */
 }
 
+.aboutus_pic img {
+  width: 400px; 
+  height: auto; 
+  margin: 10px;
+  display: inline-block;
+  margin-right: 10px; /* Adds spacing */
+}
+
+.book_now img {
+  width: 400px; 
+  height: auto; 
+  margin: 10px;
+  display: inline-block;
+  margin-right: 10px; /* Adds spacing */
+}
+
+
 h1,
 h2,
 h3,
