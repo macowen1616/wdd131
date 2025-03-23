@@ -6,50 +6,40 @@
     <meta property="og:title" content="Delicious Recipes">
     <meta property="og:type" content="website">
     <meta property="og:description" content="Explore and share delicious recipes with ease.">
-    <meta property="og:image" content="images/food_sample.jpg">
-    <meta property="og:url" content="https://yourwebsite.com">
+    <meta property="og:image" content="images/recipe-preview.jpg"> <!-- Ensure this image exists -->
+    <meta property="og:url" content="https://yourwebsite.com"> <!-- Update with actual site URL -->
     <meta name="twitter:card" content="summary_large_image">
     <title>Delicious Recipes</title>
     <link rel="stylesheet" href="recipes.css">
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet"> <!-- Updated accessible font -->
 </head>
 <body>
     <header>
         <img src="recipe-book.png" alt="Recipe Book Logo">
         <h1>Recipe Book</h1>
     </header>
-    <form class="search-form">
-        <input type="text" placeholder="Search recipes...">
-        <button type="submit">Search</button>
-    </form>
-    <main>
-
-        <section class="recipe">
-            <img src="apple-crisp.jpg" alt="Apple Crisp">
-            <div class="recipe-text">
-                <h2>Apple Crisp</h2>
-                <div class="rating" role="img" aria-label="Rating: 4 out of 5 stars">
-                    <span aria-hidden="true" class="icon-star">⭐</span>
-                    <span aria-hidden="true" class="icon-star">⭐</span>
-                    <span aria-hidden="true" class="icon-star">⭐</span>
-                    <span aria-hidden="true" class="icon-star">⭐</span>
-                    <span aria-hidden="true" class="icon-star-empty">☆</span>
-                </div>
-                <p>This apple crisp recipe is a simple yet delicious fall dessert that's great served warm with vanilla ice cream.</p>
-            </div>
-        </section>
-        
-    </main>
     
+    <form class="search-form">
+        <input type="text" id="search-input" placeholder="Search recipes...">
+        <button type="submit" id="search-button">Search</button>
+    </form>
+
+    <main>
+        <section id="recipes-container"></section>
+    </main>
+
     <footer>
         <p style="font-size: 0.6em;">
             <a href="https://www.flaticon.com/free-icons/recipe" title="recipe icons">Recipe icons created by Freepik - Flaticon</a>
         </p>
         <div class="social">
-            
+            <!-- Social media icons provided under CC from https://www.iconfinder.com/AlfredoCreates  -->
             <a href="#"><img src="instagram_icon.svg" alt="Instagram"></a>
             <a href="#"><img src="youtube_icon.svg" alt="YouTube"></a>
             <a href="#"><img src="pinterest_icon.svg" alt="Pinterest"></a>
         </div>
     </footer>
+
+    <script src="main.js" type="module"></script>
 </body>
 </html>

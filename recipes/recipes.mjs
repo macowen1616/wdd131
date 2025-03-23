@@ -1,33 +1,27 @@
 export const recipes = [
     {
-        id: 1,
-        title: "Spaghetti Carbonara",
-        image: "images/spaghetti-carbonara.jpg",
+        title: "Spaghetti Bolognese",
+        description: "A classic Italian pasta dish with rich, savory meat sauce.",
+        image: "path-to-image/spaghetti-bolognese.jpg",
+        tags: ["Italian", "Pasta", "Meat"],
         rating: 4,
-        tags: ["Italian", "Pasta", "Dinner"], // Added tags
-        ingredients: ["200g spaghetti", "100g pancetta", "2 large eggs", "50g pecorino cheese", "50g parmesan", "Freshly ground black pepper", "Salt", "2 cloves garlic", "1 tbsp olive oil"],
-        steps: [
-            "Boil the spaghetti in salted water until al dente.",
-            "Fry the pancetta with garlic in olive oil until crispy, then remove garlic.",
-            "Beat eggs and mix with grated cheese and black pepper.",
-            "Drain spaghetti and mix immediately with pancetta and egg mixture.",
-            "Serve immediately with extra cheese on top."
-        ]
+        ingredients: ["spaghetti", "ground beef", "tomato sauce", "onion", "garlic"],
     },
     {
-        id: 2,
-        title: "Classic Pancakes",
-        image: "images/classic-pancakes.jpg",
+        title: "Vegetable Stir Fry",
+        description: "A healthy, quick, and easy stir-fry with a variety of vegetables.",
+        image: "path-to-image/vegetable-stir-fry.jpg",
+        tags: ["Vegetarian", "Quick", "Healthy"],
         rating: 5,
-        tags: ["Breakfast", "Dessert", "Easy"], // Added tags
-        ingredients: ["1 cup flour", "1 tbsp sugar", "1 tsp baking powder", "1/2 tsp salt", "1 cup milk", "1 egg", "2 tbsp melted butter", "1 tsp vanilla extract"],
-        steps: [
-            "Mix all dry ingredients together.",
-            "In a separate bowl, whisk together wet ingredients.",
-            "Combine wet and dry ingredients, stirring until smooth.",
-            "Heat a pan and cook pancakes until golden on both sides.",
-            "Serve with syrup and toppings of choice."
-        ]
-    }
+        ingredients: ["broccoli", "carrot", "bell pepper", "soy sauce", "garlic"],
+    },
+    {
+        title: "Chicken Tacos",
+        description: "Delicious tacos filled with tender chicken, topped with fresh veggies.",
+        image: "path-to-image/chicken-tacos.jpg",
+        tags: ["Mexican", "Chicken", "Tacos"],
+        rating: 4,
+        ingredients: ["chicken breast", "taco shells", "lettuce", "tomato", "cheese"],
+    },
+    // Add more recipes as needed
 ];
-
