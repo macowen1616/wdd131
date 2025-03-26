@@ -28,3 +28,4 @@ document.addEventListener("DOMContentLoaded", function () {
     // Show the first slide initially
     showSlide(currentIndex);
 });
+

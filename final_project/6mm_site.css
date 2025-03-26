@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato");
 
+/* General stuff & short cuts*/
 :root {
   /* change the values below to your colors from your palette */
   --primary-color: #c2b280;
@@ -27,6 +28,7 @@
   --nav-hover-background-color: var(--accent2-color);
 }
 
+/* Logo for each page */
 .logo {
     padding-top: .5em;
     display: flex;
@@ -36,12 +38,22 @@
     height: auto
     }
 
-hr{
+.line{
 margin-top: 20px;
 height: 3px;
-margin: 35px 0;
+margin: 5px 0;
 background: var(--accent1-color);
 }
+
+
+hr{
+margin-top: 50px;
+height: 3px;
+margin: 5px 0;
+background: var(--accent1-color);
+}
+
+/* Navigation bar*/
 nav {
     background-color: var(--nav-background-color);
     line-height: 3em;
@@ -67,12 +79,18 @@ nav {
     background-color: var(--nav-hover-background-color);
   }
 
+
+
+
+
+/* Slide show stuff */
+
   .slideshow-container {
     padding-top: 1em;
     position: relative;
-    width: 600px;
+    width: 1050px;
     /*max-width: 400px;*/
-    height:400px;
+    height:600px;
     margin: auto;
     overflow: hidden;
     border-radius: 10px;
@@ -82,11 +100,11 @@ nav {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: center; /* Default: centers the image */
+    object-position: center; 
     display: none; 
 }
 .slide.active {
-    display: block; /* Show only the active slide */
+    display: block; 
 }
 
 button {
@@ -107,6 +125,8 @@ button:hover {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
+
+/*General page stuff*/
 body{
     background-color: var(--primary-color);
 }
@@ -120,13 +140,9 @@ h1{
     font-family: Helvetica;
 }
 
-iframe {
-    display: block;
-    margin: 0 auto;
-    width: 100%;
-    max-width: 600px;
-    height: 450px;
-}
+
+
+/* These are for the index page */
 
 .index {
     display: grid;
@@ -138,6 +154,10 @@ iframe {
     margin: 0 auto;
     background-color: #556b2f;
     color: #c2b280;
+}
+
+.location{
+  list-style: none;
 }
 
 .hours_contact{
@@ -163,5 +183,47 @@ iframe {
   list-style: none;
 }
 
+/* About us pages*/
+
+.grid_about_us{
+  display: grid;
+    grid-template-columns: 2fr 2fr;
+    text-align: center;
+    gap: 20px;
+    padding: 20px;
+    max-width: 100%;
+    margin: 0 auto;
+    background-color: #556b2f;
+    color: #c2b280;
+}
+
+.title_about {
+  text-align: center;
+}
+
+.about_1,.about_2{
+  width: 600px;  /* Adjust width */
+  height: auto;  /* Keeps aspect ratio */
+}
 
 
+/* Book Now Page*/
+
+.book_title {
+  text-align: center;
+}
+
+.booknow {
+  width: 1000px;
+  height: 600px;
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.calendar {
+  margin-top: 30px;
+  margin:30px;
+  background-color: white;
+}
