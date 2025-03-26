@@ -45,6 +45,14 @@ margin: 5px 0;
 background: var(--accent1-color);
 }
 
+.social{
+  padding-top: .5em;
+    display: flex;
+    justify-content: flex-end; /* Align items to the left */
+    align-items: center;
+    width: 200px; /* Adjust this value to make the logo smaller */
+    height: auto
+}
 
 hr{
 margin-top: 50px;
