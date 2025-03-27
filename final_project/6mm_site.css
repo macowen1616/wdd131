@@ -45,14 +45,26 @@ margin: 5px 0;
 background: var(--accent1-color);
 }
 
-.social{
-  padding-top: .5em;
-    display: flex;
-    justify-content: flex-end; /* Align items to the left */
-    align-items: center;
-    width: 200px; /* Adjust this value to make the logo smaller */
-    height: auto
+.social, .social_int {
+  display: flex;
+  align-items: center;
+  position: absolute; /* Keeps them at the top but allows scrolling */
+  top: -11px; /* Adjust this value as needed */
 }
+
+.social {
+  right: 75px; /* Positions it on the right side */
+  width: 50px; /* Adjust size */
+  height: 50px;
+  top:1px;
+}
+
+.social_int {
+  right: 10px; /* Positions it slightly to the left of .social */
+  width: 75px;
+  height: 75px;
+}
+
 
 hr{
 margin-top: 50px;
@@ -87,10 +99,6 @@ nav {
     background-color: var(--nav-hover-background-color);
   }
 
-
-
-
-
 /* Slide show stuff */
 
   .slideshow-container {
@@ -110,9 +118,12 @@ nav {
     object-fit: cover;
     object-position: center; 
     display: none; 
+    border-radius: 10px;
+
 }
 .slide.active {
     display: block; 
+    border-radius: 10px;
 }
 
 button {
@@ -212,6 +223,7 @@ h1{
 .about_1,.about_2{
   width: 600px;  /* Adjust width */
   height: auto;  /* Keeps aspect ratio */
+  border: 10px solid #000000;
 }
 
 
@@ -228,10 +240,12 @@ h1{
   margin: 0 auto;
   justify-content: center;
   align-items: center;
+  border: 10px solid #000000;
 }
 
 .calendar {
   margin-top: 30px;
   margin:30px;
   background-color: white;
+  border: 8px solid #556b2f;
 }
