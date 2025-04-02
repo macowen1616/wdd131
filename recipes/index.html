@@ -21,25 +21,12 @@
     
     <form class="search-form">
         <input type="text" id="search-input" placeholder="Search recipes...">
-        <button type="submit" id="search-button">Search</button>
+        <button type="button" id="search-button">Search</button>
     </form>
 
     <main>
         <section id="recipes-container">
-            <article class="recipe">
-                <img src="apple-crisp.jpg" alt="Recipe Image">
-                <div class="recipe-text">
-                    <h2 class="recipe-title">Apple Crisp</h2>
-                    <span class="rating" role="img" aria-label="Rating: 4 out of 5 stars">
-                        <span aria-hidden="true" class="icon-star">⭐</span>
-                        <span aria-hidden="true" class="icon-star">⭐</span>
-                        <span aria-hidden="true" class="icon-star">⭐</span>
-                        <span aria-hidden="true" class="icon-star">⭐</span>
-                        <span aria-hidden="true" class="icon-star-empty">☆</span>
-                    </span>
-                    <p class="recipe-description">This apple crisp recipe is a simple yet delicious fall dessert that's great served warm with vanilla ice cream.</p>
-                </div>
-            </article>
+            <!-- Recipes will be rendered here -->
         </section>
     </main>
     
@@ -56,7 +43,7 @@
         </div>
     </footer>
 
-    <script src="recipes.mjs" type="module"></script>
+    
     <script src="main.js" type="module"></script>
 </body>
 </html>
