@@ -11,7 +11,7 @@
 
 <header>
 <a href="index.html">
-<img class = "logo" src="6mm_airsoft(3).png" alt="" />
+<img class = "logo" src="6mm_logo.png" alt="" />
 </a>
 
 <img class = "social_int" src="instagram_icon.png" alt="" />
@@ -30,25 +30,38 @@
 </hr>
 </header>
 
+        <div class = "title_6mm">
+            <h1>6mm Airsoft</h1>
+        </div>
 <br>
-        <div class="slideshow-container">
-            <img class="slide" src="airsoft_5.webp" alt="" />
-            <img class="slide" src="airsoft_1.webp" alt="" />
-            <img class="slide" src="airsoft_2.webp" alt="" />
-			<img class="slide" src="airsoft_3.webp" alt="" />
-			<img class="slide" src="airsoft_4.webp" alt="" />
-        
-        <!-- Navigation buttons -->
-        <button class="prev" onclick="prevSlide()">&#10094;</button>
-        <button class="next" onclick="nextSlide()">&#10095;</button>
-    </div>
+<div class="slideshow-container">
+    <img class="slide active" src="airsoft_5.webp" alt="" />
+    <img class="slide" src="airsoft_1.webp" alt="" />
+    <img class="slide" src="airsoft_2.webp" alt="" />
+    <img class="slide" src="airsoft_3.webp" alt="" />
+    <img class="slide" src="airsoft_4.webp" alt="" />
+
+    <!-- Navigation buttons (NO inline onclick anymore) -->
+    <button class="prev">&#10094;</button>
+    <button class="next">&#10095;</button>
+</div>
+
+<script type="module" src="6mm_site.mjs"></script>
+
 
 
     <body>
-        <!--Embedded Map-->
+<br>
+        <h1 class="events">Upcoming Airsoft Events</h1>
+
+        <div class = 'event_button'>
+    <button id="showEvents">Show Events</button>
+    <div id="event-list"></div>
+        </div>
+
+<script type="module" src="js/6mm_site.js"></script>
 
 
-        <h1 class="field">Smith Field</h1>
     <main class="index">
         <div>
             <h3>Description</h3>
@@ -74,8 +87,8 @@
 
     <br>
 
-    <hr>
-    </hr>
+    <hr class = 'footer_space'>
+
     <div class="hours_contact">
         
     <div>
