@@ -149,28 +149,42 @@ button:hover {
 }
 
 
-/*General page stuff*/
-body{
-    background-color: var(--primary-color);
+/* General page stuff */
+body {
+  background-color: var(--primary-color);
 }
 
+.event_button {
+position: relative;
+text-align: left; /* Aligns the button to the left */
+}
 
-.event_button{
-  position: relative;
-  margin-top: 30px; /* Adjust as needed */
+.event-button-wrapper {
+display: flex; /* Enables flexbox */
+justify-content: flex-start; /* Align the button to the left */
+margin-bottom: 20px; /* Adds space below the button */
+text-align: center;
+}
+
+.event-wrapper {
+margin-top: 50px;    /* Adds space above */
+margin-bottom: 50px; /* Adds space below */
+text-align: center;  /* Ensures the event list is centered */
+}
+
+.events { 
   text-align: center;
+  text-decoration: underline;
 }
 
-
-.events{ 
-    text-align: center;
-    text-decoration: underline;
+#event-list {
+  margin: 0 auto;  /* Centers the event list */
+  width: 80%;      /* Adjust the width of the event list */
 }
 
-h1{
-    font-family: Helvetica;
+h1 {
+  font-family: Helvetica;
 }
-
 
 
 /* These are for the index page */

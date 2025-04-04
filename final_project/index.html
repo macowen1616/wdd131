@@ -50,19 +50,23 @@
 
 
 
+
     <body>
 <br>
         <h1 class="events">Upcoming Airsoft Events</h1>
 
-        <div class = 'event_button'>
-    <button id="showEvents">Show Events</button>
-    <div id="event-list"></div>
-        </div>
+        <div class="event-wrapper"> 
+            <div class="event_button">
+              <button id="events-container">Show Events</button>
+              <button id="close-events-button" style="display: none;">Close Events</button>
+              <div id="event-list"></div>
+            </div>
+        <script src="6mm_site.js" type="module"></script>
 
-<script type="module" src="js/6mm_site.js"></script>
 
 
     <main class="index">
+        
         <div>
             <h3>Description</h3>
         <p>Rusty’s Junkyard is a high-intensity urban-industrial battlefield designed for immersive military-style combat. 
